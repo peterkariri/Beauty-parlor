@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - Beauty Parlor</title>
+  <link rel="stylesheet" type="text/css" href="/styles/about.css">
+  <link rel="stylesheet" href="/styles/home.css">
+
+</head>
+<style>
+#products ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+#products ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+</style>
+<body>
+  <!-- Other content -->
+
+  <section id="products">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/products/product1">Cosmetics</a></li>
+      <li><a href="/products/product2">Nail polish</a></li>
+      <li><a href="/products/product3">Hairproducts</a></li>
+      <li><a href="/products/product4">Braids&Weaves</a></li>
+      <li><a href="/products/product5">Make up</a></li>
+      <li><a href="/products/product6">Skin-care routine</a></li>
+    </ul>
+  </section>
+
+  <header>
+    <h1>Beauty Parlor Management System</h1>
+</header>
+
+<main id="content">
+    <section id="services">
+       <div class="container">
+        <div class="span-1" id="one">
+            <img src="/images/beauty 1.jpg" alt="beauty image" id="img-1">
+            <div class="see">
+                <h2>welcome to beauty Parlor when beauty meets the eye </h2>
+                <p>with beauty parlor all services are now easily accessible under one platform</p>
+            </div>
+           
+        </div>
+        <div class="span-2" id="two">
+            <img src="/images/beauty2.webp" alt="service image">
+            <div class="see-2">
+                <p>with beauty palor ,everything regaridning beauty is at your door step with just a click on order 
+                    you get the best services in cosmetics ,nalis ,<i>makeups</i> ,skin care.
+                </p>
+            </div>
+            
+        </div>
+        <div class="span-1" id="three">
+            <img src="/images/istockphoto-1448312109-612x612.jpg" alt="lipstick image">
+            <div class="see-3">
+                <p>
+                    at beauty palor we bring the best of the beauty world to you,so hurry up and join our community
+                    beacuse beauty and elegence meet the eye.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+</main>
+<%- include("_footer.ejs") %>
+
+  <!-- Other content -->
+</body>
+</html>

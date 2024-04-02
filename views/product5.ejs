@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.make-up, .skin-tone {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+h1 { animation: glow 5s ease-in-out infinite;
+             margin: 0;
+             text-align: center;
+             }
+             @keyframes glow { 0%
+                 { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00; } 
+             50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 360px 15px #fff, 0 0 20px #0f0, 0 0 35px #0f0, 0 0 40px #0f0, 0 0 50px #0f0, 0 0 75px #0f0; } 
+             100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00; } }
+        
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <%- include('_header2.ejs') %>
+    <!DOCTYPE html>
+
+    <header>
+        <h1>Make Ups</h1>
+    </header>
+    <h1>Click To Book An Appointment!!!</h1>
+    <main>
+        <section class="make-ups">
+            <h2>Make Ups</h2>
+            <div class="make-up">
+                <img src="make-up1.jpg" alt="Make Up 1">
+                <h3>Make Up 1</h3>
+                <p>Description of Make Up 1</p>
+            </div>
+            <div class="make-up">
+                <img src="make-up2.jpg" alt="Make Up 2">
+                <h3>Make Up 2</h3>
+                <p>Description of Make Up 2</p>
+            </div>
+            <!-- Add more make ups as needed -->
+        </section>
+        <section class="skin-tones">
+            <h2>Skin Tones</h2>
+            <div class="skin-tone">
+                <img src="skin-tone1.jpg" alt="Skin Tone 1">
+                <h3>Skin Tone 1</h3>
+                <p>Description of Skin Tone 1</p>
+            </div>
+            <div class="skin-tone">
+                <img src="skin-tone2.jpg" alt="Skin Tone 2">
+                <h3>Skin Tone 2</h3>
+                <p>Description of Skin Tone 2</p>
+            </div>
+            <!-- Add more skin tones as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Make Ups. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

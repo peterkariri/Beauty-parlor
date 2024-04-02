@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8b3e6;
+    padding: 20px;
+    text-align: center;
+}
+
+#about, #services, #team {
+    margin: 20px;
+    padding: 20px;
+}
+
+#about, #services, #team p {
+    line-height: 1.5;
+}
+
+#team img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f8b3e6;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

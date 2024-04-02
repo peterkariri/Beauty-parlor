@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+     .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        
+     .nail-type {
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #french{
+            width:90%;
+        }
+        #deep{
+            width: 90%;
+        }
+        .nail-type:hover {
+            transition: all 0.3s ease-in-out;
+            transform: translateY(-5px);
+        }
+       
+        
+     .nail-type img {
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+            height: auto;
+        }
+        h1 { animation: glow 5s ease-in-out infinite;
+             margin: 0;
+             text-align: center;
+             }
+             @keyframes glow { 0%
+                 { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00; } 
+             50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 360px 15px #fff, 0 0 20px #0f0, 0 0 35px #0f0, 0 0 40px #0f0, 0 0 50px #0f0, 0 0 75px #0f0; } 
+             100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00; } }
+        
+     .product-name {
+            position: absolute;
+            left: 20px;
+            width:60%;
+            padding: 10px;
+            background-color: #f8b3e6;
+            color:blue;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <%- include('_header2.ejs') %>
+  
+    <h1>Click To Book An Appointment!!!</h1>
+    <div class="container">
+        <div class="nail-type" id="french">
+            <img src="/images/french1.jpeg" alt="Nail Type 1">
+            <a href="/booknow"> <div class="product-name">French Manicure</div></a>
+           
+        </div>
+        <div class="nail-type">
+            <img src="/images/gel nails.jpeg" alt="Nail Type 2">
+            <a href="/booknow"><div class="product-name">Gel Nails</div></a>
+          
+        </div>
+        <div class="nail-type">
+            <img src="/images/acrylics .jpeg" alt="Nail Type 3">
+            <a href="/booknow"><div class="product-name">Acrylic Nails</div></a>
+            
+        </div>
+        <div class="nail-type" id="deep">
+            <img src="/images/shellac.jpeg" alt="Nail Type 4">
+            <a href="/booknow"> <div class="product-name">Shellac Nails</div></a>
+           
+        </div>
+        <div class="nail-type" >
+            <img src="/images/dippowder.jpeg" alt="Nail Type 5">
+            <a href="/booknow"><div class="product-name">Dip Powder Nails</div></a>
+            
+        </div>
+        <div class="nail-type">
+            <img src="/images/nailart.jpeg" alt="Nail Type 6">
+            <a href="/booknow"><div class="product-name">Nail Art</div></a>
+            
+        </div>
+        <div class="nail-type">
+            <img src="/images/Red Nail Polish.jpeg" alt="Nail Polish 1">
+            <a href="/booknow"><div class="product-name">Red Nail Polish</div></a>
+            
+        </div>
+        <div class="nail-type">
+            <img src="/images/pinknail.jpeg" alt="Nail Polish 2">
+            <a href="/booknow"><div class="product-name">Pink Nail Polish</div></a>
+            
+        </div>
+        <div class="nail-type">
+            <img src="/images/Blue Nail Polish.jpeg" alt="Nail Polish 3">
+            <a href="/booknow"><div class="product-name">Blue Nail Polish</div></a>
+            
+        </div>
+        <!-- More nail polish colors/divs -->
+    </div>
+</body>
+</html>
+</body>
+</html>

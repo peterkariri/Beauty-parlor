@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        
+        .cosmetics {
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .cosmetics img {
+            width: 100%;
+            height: auto;
+        }
+        #blush{
+            width: 80%;
+            height: auto
+        }
+        #conc{
+            width:90% ;
+        }
+        h1 { animation: glow 5s ease-in-out infinite;
+             margin: 0;
+             text-align: center;
+             }
+             @keyframes glow { 0%
+                 { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00; } 
+             50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 360px 15px #fff, 0 0 20px #0f0, 0 0 35px #0f0, 0 0 40px #0f0, 0 0 50px #0f0, 0 0 75px #0f0; } 
+             100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00; } }
+        
+        .product-name {
+            position: absolute;
+            left:20px;
+            width: 60%;
+            padding: 10px;
+            background-color: #f8b3e6;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+    
+<body>
+    <%- include('_header2.ejs') %>
+    <h1>Click To Book An Appointment!!!</h1>
+    <div class="container">
+        <div class="cosmetics">
+            <img src="/images/lipsticky.jpeg" alt="Cosmetic 1" >
+           <a href="/booknow"><div class="product-name">Lipstick</div></a> 
+            
+        </div>
+        <div class="cosmetics">
+            <img src="/images/mascara.webp" alt="Cosmetic 2">
+           <a href="/booknow"><div class="product-name">Mascara</div></a> 
+        </div>
+        <div class="cosmetics">
+            <img src="/images/eyeshadow1.jpeg" alt="Cosmetic 3">
+           <a href="booknow"> <div class="product-name">Eyeshadow</div></a>
+        </div>
+        <div class="cosmetics">
+            <img src="/images/foundation2.jpeg" alt="Cosmetic 4">
+            <a href="/booknow"><div class="product-name">Foundation</div></a>
+        </div>
+        <div class="cosmetics" id="blush">
+            <img src="/images/blush.jpeg" alt="Cosmetic 5">
+            <a href="/booknow"><div class="product-name">Blush</div></a>
+        </div>
+        <div class="cosmetics">
+            <img src="/images/eyeliner.jpeg" alt="Cosmetic 6">
+            <a href="/booknow"><div class="product-name">Eyeliner</div></a>
+        </div>
+        <div class="cosmetics">
+            <img src="/images/primer.jpeg" alt="Cosmetic 7">
+            <a href="/booknow"><div class="product-name">Primer</div></a>
+        </div>
+        <div class="cosmetics" id="conc">
+            <img src="/images/concealer.jpeg" alt="Cosmetic 8">
+            <img src="/images/concealer1.jpeg" alt="concealer">
+            <a href="/booknow"><div class="product-name">Concealer</div></a>
+        </div>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>
